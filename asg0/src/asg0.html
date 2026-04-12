@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>asg0</title>
+</head>
+
+<body onload="main()">
+  <canvas id="example" width="400" height="400" style="border:1px solid black;">
+    Please use a browser that supports "canvas"
+  </canvas>
+
+  <br><br>
+
+  <label for="v1x">v1 x:</label>
+  <input type="text" id="v1x" value="2">
+
+  <label for="v1y">v1 y:</label>
+  <input type="text" id="v1y" value="2">
+
+  <br><br>
+
+  <label for="v2x">v2 x:</label>
+  <input type="text" id="v2x" value="-2">
+
+  <label for="v2y">v2 y:</label>
+  <input type="text" id="v2y" value="2">
+
+  <button onclick="handleDrawEvent()">Draw</button>
+
+  <br><br>
+
+  <label for="operation">Operation:</label>
+  <select id="operation">
+    <option value="add">Add</option>
+    <option value="sub">Sub</option>
+    <option value="mul">Mul</option>
+    <option value="div">Div</option>
+    <option value="mag">Magnitude</option>
+    <option value="norm">Normalize</option>
+    <option value="angle">Angle Between</option>
+    <option value="cross">Cross</option>
+    <option value="area">Area</option>
+  </select>
+
+  <label for="scalar">Scalar:</label>
+  <input type="text" id="scalar" value="2">
+
+  <button onclick="handleDrawOperationEvent()">Draw Operation</button>
+
+  <script src="lib/cuon-matrix-cse160.js"></script>
+  <script src="asg0.js"></script>
+</body>
+</html>
