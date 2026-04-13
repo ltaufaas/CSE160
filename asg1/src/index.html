@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Assignment 1</title>
+</head>
+<body onload="main()">
+  <p>
+    Louisa Taufaasau<br>
+    ltaufaas@ucsc.edu
+  </p>
+
+  <p>
+    Notes to Grader:<br>
+    Assignment 1 finished.
+  </p>
+
+  <canvas id="webgl" width="400" height="400" style="border:1px solid black;">
+    Please use a browser that supports canvas
+  </canvas>
+
+  <br><br>
+
+  <button id="pointButton">Point</button>
+  <button id="triangleButton">Triangle</button>
+  <button id="clearButton">Clear</button>
+  <button id="circleButton">Circle</button>
+  <button id="pictureButton">Draw Picture</button>
+
+
+  <br><br>
+
+  Segments
+  <input type="range" id="segmentSlide" min="3" max="20" value="10">
+  Red
+  <input type="range" id="redSlide" min="0" max="100" value="100">
+  Green
+  <input type="range" id="greenSlide" min="0" max="100" value="100">
+  Blue
+  <input type="range" id="blueSlide" min="0" max="100" value="100">
+
+  <br><br>
+
+  Size
+  <input type="range" id="sizeSlide" min="5" max="40" value="10">
+
+  <script src="../lib/webgl-utils.js"></script>
+  <script src="../lib/webgl-debug.js"></script>
+  <script src="../lib/cuon-utils.js"></script>
+  <script src="Point.js"></script>
+  <script src="Triangle.js"></script>
+  <script src="Circle.js"></script>
+  <script src="asg1.js"></script>
+</body>
+</html>
