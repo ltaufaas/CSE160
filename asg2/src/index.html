@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Asg2 - Blocky Animal</title>
+  <style>
+    body { margin: 0; background: #111; color: white; font-family: sans-serif; }
+    canvas { display: block; margin: auto; background: black; }
+    .controls { padding: 10px; }
+  </style>
+</head>
+
+<body>
+
+  <!-- Canvas -->
+  <canvas id="webgl" width="600" height="600"></canvas>
+
+  <!-- Controls -->
+  <div class="controls">
+    <p>Global Rotation</p>
+    <input type="range" id="angleSlide" min="0" max="360" value="0">
+    <p>Upper Leg</p>
+    <input type="range" id="upperLegSlide" min="-45" max="45" value="0">
+    <p>Lower Leg</p>
+    <input type="range" id="lowerLegSlide" min="-45" max="45" value="0">
+    <p>Hoof</p>
+    <input type="range" id="hoofSlide" min="-45" max="45" value="0">
+  </div>
+
+  <!-- Libraries (ORDER MATTERS) -->
+  <script src="../lib/webgl-utils.js"></script>
+  <script src="../lib/webgl-debug.js"></script>
+  <script src="../lib/cuon-utils.js"></script>
+  <script src="../lib/cuon-matrix-cse160.js"></script>
+
+  <!-- Your code -->
+  <script src="Cube.js"></script>
+  <script src="asg2.js"></script>
+  <script src="Triangle.js"></script>
+  <script>
+    main();
+  </script>
+</body>
+</html>
