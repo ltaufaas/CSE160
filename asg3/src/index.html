@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+
+  <title>Asg3 - Virtual World</title>
+
+  <style>
+
+    body {
+
+      margin: 0;
+
+      background: #111;
+
+      color: white;
+
+      font-family: sans-serif;
+
+      text-align: center;
+    }
+
+    canvas {
+
+      display: block;
+
+      margin: auto;
+
+      background: black;
+
+      border: 2px solid white;
+    }
+
+    .info {
+
+      padding: 10px;
+
+      line-height: 1.6;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="info">
+
+    <h2>Louisa Taufaasau</h2>
+
+    <p>ltaufaas@ucsc.edu</p>
+
+    <p><strong>Controls</strong></p>
+
+    <p>
+      W = Forward |
+      S = Backward |
+      A = Move Left |
+      D = Move Right
+    </p>
+
+    <p>
+      Q = Rotate Left |
+      E = Rotate Right
+    </p>
+
+    <p>
+      Mouse Drag = Rotate Camera
+    </p>
+
+    <p>
+      F = Add Block |
+      G = Remove Block
+    </p>
+
+    <p><strong>Features</strong></p>
+
+    <p>
+      32x32 procedurally generated world
+    </p>
+
+    <p>
+      Variable wall heights
+    </p>
+
+    <p>
+      Multiple textures
+    </p>
+
+    <p>
+      Editable voxel blocks
+    </p>
+
+    <p>
+      Perspective camera
+    </p>
+
+    <p>
+      Skybox and textured cubes using UV mapping
+    </p>
+
+  </div>
+
+  <!-- Canvas -->
+
+  <canvas id="webgl" width="600" height="600"></canvas>
+
+  <!-- Libraries -->
+
+  <script src="../lib/webgl-utils.js"></script>
+
+  <script src="../lib/webgl-debug.js"></script>
+
+  <script src="../lib/cuon-utils.js"></script>
+
+  <script src="../lib/cuon-matrix-cse160.js"></script>
+
+  <!-- Shapes -->
+
+  <script src="triangle.js"></script>
+
+  <script src="Cube.js"></script>
+
+  <!-- Camera -->
+
+  <script src="Camera.js"></script>
+
+  <!-- Main -->
+
+  <script src="asg3.js"></script>
+
+  <script>
+
+    main();
+
+  </script>
+
+</body>
+
+</html>
