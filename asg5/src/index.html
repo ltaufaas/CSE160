@@ -8,15 +8,51 @@
     body {
       margin: 0;
       overflow: hidden;
+      font-family: 'Times New Roman', Times, serif;
     }
 
     canvas {
       display: block;
     }
+
+    #info {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.85);
+      padding: 10px;
+      border-radius: 5px;
+      max-width: 350px;
+      font-size: 14px;
+    }
+
+    #info h3 {
+      margin: 0 0 5px 0;
+    }
+
+    #info p {
+      margin: 3px 0;
+    }
   </style>
 </head>
 
 <body>
+
+  <div id="info">
+    <h3>Louisa Taufaasau</h3>
+    <p>ltaufaas@ucsc.edu</p>
+
+    <p><strong>Notes to Grader:</strong></p>
+    <p>
+      This project features a textured courtyard containing a Sudowoodo shrine
+      surrounded by pillars and stone walls. An animated butterfly flies around
+      the shrine while a moving point light follows it and illuminates the scene.
+      OrbitControls are enabled for camera movement and exploration.
+    </p>
+  </div>
+
   <script type="module" src="./main.js"></script>
+
 </body>
 </html>
